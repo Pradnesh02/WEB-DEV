@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UEFA Champions League</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f2f2f2;
+      color: #111;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      background-color: #003399;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    h2 {
+      color: #003399;
+    }
+
+    .match {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 10px 0;
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .team {
+      font-weight: bold;
+    }
+
+    .score {
+      font-size: 20px;
+    }
+
+    #themeBtn {
+      padding: 10px 20px;
+      background-color: #003399;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .dark-mode {
+      background-color: #121212;
+      color: #eee;
+    }
+
+    .dark-mode .match {
+      background-color: #1e1e1e;
+      border-color: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      background-color: #003399;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>UEFA Champions League</h1>
+    <p>The greatest football club competition in Europe!</p>
+  </header>
+
+  <div class="container">
+    <h2>Latest Matches</h2>
+
+    <div class="match">
+      <div class="team">Real Madrid</div>
+      <div class="score">2 - 1</div>
+      <div class="team">Manchester City</div>
+    </div>
+
+    <div class="match">
+      <div class="team">Bayern Munich</div>
+      <div class="score">1 - 1</div>
+      <div class="team">Arsenal</div>
+    </div>
+
+    <div class="match">
+      <div class="team">Barcelona</div>
+      <div class="score">3 - 0</div>
+      <div class="team">Napoli</div>
+    </div>
+
+    <button id="themeBtn">Toggle Theme</button>
+  </div>
+
+  <footer>
+    &copy; 2025 UEFA Champions League Fan Page
+  </footer>
+
+  <script>
+    const btn = document.getElementById("themeBtn");
+    btn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
+</body>
+</html>
